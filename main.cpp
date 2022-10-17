@@ -1,13 +1,21 @@
 #include <iostream>
 #include <string>
 #include "unindent.h"
+#include "indent.h"
 
 int main()
 {
+    std::string unindent{};
+    std::string indent{};
     std::string l;
     while (std::getline(std::cin, l))
     {
-        std::cout << removeLeadingSpaces(l);
+        unindent += removeLeadingSpaces(l);
+        indent += addLeadingSpaces(l);
     }
+
+    std::cout << unindent << '\n';
+    std::cout << indent << '\n';
+
     return 0;
 }
