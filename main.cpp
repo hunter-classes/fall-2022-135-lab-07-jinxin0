@@ -11,8 +11,8 @@ int main()
     std::string l;
     while (std::getline(std::cin, l))
     {
-        unindent += removeLeadingSpaces(l);
-        indent += addLeadingSpaces(l);
+        unindent += remove_leading_spaces(l);
+        indent += add_leading_spaces(l);
     }
 
     std::cout << unindent << '\n';
