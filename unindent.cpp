@@ -1,7 +1,7 @@
 #include <cctype>
 #include "unindent.h"
 
-std::string removeLeadingSpaces(std::string line)
+std::string remove_leading_spaces(std::string line)
 {
     std::size_t i = 0;
     while (i < line.size() && std::isspace(line[i]))

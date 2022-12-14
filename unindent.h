@@ -2,4 +2,4 @@
 
 #include <string>
 
-std::string removeLeadingSpaces(std::string line);
+std::string remove_leading_spaces(std::string line);
